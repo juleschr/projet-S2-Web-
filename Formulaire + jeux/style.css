@@ -1,0 +1,91 @@
+/* Police d'écriture */
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&family=Open+Sans:ital,wght@1,300..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #21866f;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.game{
+    width: 500px;   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+}
+.start_btn{
+    justify-self: center; 
+    padding: 10px 20px;
+    margin-bottom: 4px;
+    background-color: rgb(230, 0, 0);
+    border: 0;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.infos_left{
+    justify-self: left;
+    text-align: left;
+    font-style: italic;
+}
+.infos_right{
+    justify-self: right;
+    text-align: right;
+    font-style: italic;
+}
+
+.contrainer{
+    height: 400px;
+    width: 500px;
+    border: 1px solid chocolate;
+    cursor: crosshair;
+    position: relative;
+    background-color: rgb(200, 241, 181);
+    box-shadow: 0 0 5px black;
+    border-radius: 6px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.alien{ 
+    height: 50px;
+    width: 60px;
+    position: absolute;
+    transition: 0.25s;
+    animation: animateTarget 10s infinite;
+}
+
+.person{
+    height: 50px;
+    width: 60px;
+    position: absolute;
+    transition: 0.25s;
+    animation: animateTarget 12s infinite;
+}
+
+#gameZone {
+    display: none;
+}
+
+@keyframes animateTarget{
+    to{
+        transform: translateY(-200px) rotate(0 deg);
+    }
+}
