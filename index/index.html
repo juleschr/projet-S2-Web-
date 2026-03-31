@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>FRIGO&CO</title>
+  <style src="/index/index.css"></style>
+  <style src="/navbar.css"></style>
+  <script src="/index/index.js"></script>
+
 </head>
 <body>
-    
+
+  <!-- HEADER -->
+  <header>
+
+    <!-- Logo -->
+    <div class="logo">
+      <span class="frigo">FRIGO</span><span style="color:#222">&</span><span class="co">CO</span>
+    </div>
+
+    <!-- Horloge : les id "heure" et "date" sont mis à jour par le JavaScript -->
+    <div class="horloge">
+      <div id="heure">00:00:00</div>
+      <div id="date">00/00/0000</div>
+    </div>
+
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+
+    <!-- Icône hamburger (3 traits) -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Liens -->
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="/nos produits/produit.html">à propos</a></li>
+      <li><a href="#">produits</a></li>
+      <li><a href="#">equipe</a></li>
+      <li><a href="#">contact</a></li>
+      <li><a href="#">nous trouver</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- CONTENU -->
+  <main>
+    <h1>Bienvenue chez <span style="color:#f60202">FRIGO&CO</span></h1>
+    <p>Spécialistes du froid commercial. On vous accompagne dans tous vos projets de réfrigération.</p>
+    <div class="boutons">
+      <button href="nos_produits/produit.hlml" class="btn-rouge">Nos produits</button>
+      <button href="/contact/contact.html" class="btn-blanc"">Nous contacter</button>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 FRIGO&CO — Tous droits réservés
+  </footer>
+
 </body>
 </html>
