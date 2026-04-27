@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <link rel="stylesheet" href="page_2.css">
+    <title>A PROPOS</title>
+</head>
+<body>
+    <dialog id = "dialog_1">
+        <h3>Réinventez les frigos</h3>
+        <img src="frigo_futuriste.jpg"
+        widht="200"
+        height = "160"/>
+        <p>Réinventez les frigos consiste pour nous à révolutionner la manière dont l'utilisateur approche la consommation au quotidien...</p>
+        <button onclick="document.getElementById('dialog_1').close()">fermer</button>
+    </dialog>
+
+    <dialog id = "dialog_2">
+        <h3>Assurer l'accès aux frigos pour tous.</h3>
+        <button onclick="document.getElementById('dialog_2').close()">fermer</button>
+    </dialog>
+
+    <dialog id = "dialog_3">
+        <h3>Vaincre la tyrannie de la consommation sur place.</h3>
+        <button onclick="document.getElementById('dialog_3').close()">fermer</button>
+    </dialog>
+
+    <dialog id = "dialog_4">
+        <h3>Gagner la confiance des utilisateurs.</h3>
+        <button onclick="document.getElementById('dialog_4').close()">fermer</button>
+    </dialog>
+
+    <dialog id = "dialog_5">
+        <h3>Survivre</h3>
+        <button onclick="document.getElementById('dialog_5').close()">fermer</button>
+    </dialog>
+    
+    <section id = "historique">
+    <h2>Notre Histoire</h2>
+    <ul>
+        <li>Tout a commencé en 2025 à Bologna lorsque nous avons décidé soudainement que notre avenir se situait dans les frigos, cet objet ô combien important pour l'ensemble de la population.</li><br>
+        <li>Le 1er avril 2026 nous avons donc crée cette start-up afin de satisfaire le besoin mondial en frigos plus particulièrement en frigos Italien.</li><br>
+    </ul>
+    </section>
+    <section id = "missions">
+        <h2>Nos Missions</h2>
+        <ol>
+            <li><button onclick="document.getElementById('dialog_1').showModal()">Réinventez les frigos.</button></li><br>
+            <li><button onclick="document.getElementById('dialog_2').showModal()">Assurer l'accès aux frigos pour tous.</button></li><br>
+            <li><button onclick="document.getElementById('dialog_3').showModal()">Vaincre la tyrannie de la consommation sur place.</button></li><br>
+            <li><button onclick="document.getElementById('dialog_4').showModal()">Gagner la confiance des utilisateurs.</button></li><br>
+            <li><button onclick="document.getElementById('dialog_5').showModal()">Survivre</button></li>
+        </ol>
+
+    </section>
+    <section id = "vision">
+        <h2>Notre Grande Vision</h2>
+        <ul>
+            <li>Nous voyons chaque frigo comme une oeuvre d'art et de ce fait nous voulons toujours créer des frigos toujours plus unique, pratique et efficace.</li><br>
+            <li>Nous espérons donc à l'avenir être à la hauteur des attentes de nos acheteurs et de continuer de promouvoir l'objet qui est indéniablement le plus important dans la vie de quiconque.(svp achetez nos produits sinon on va vraiment devoir fermer)</li>
+        </ul>
+    </section>
+    <script src="page_2.js"></script>
+</body>
+</html>

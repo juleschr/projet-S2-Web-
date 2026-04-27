@@ -1,0 +1,16 @@
+body{
+    text-align: left;
+    
+}
+
+h2{
+        background-color: rgba(128, 255, 0, 0.663);
+    }
+
+li{
+    background-color: rgba(0, 0, 255, 0.021); 
+}
+dialog{
+    text-align: center;
+    background-color: rgba(25, 121, 195, 0.86);
+}
