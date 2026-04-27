@@ -8,10 +8,34 @@
 </head>
 <body>
     <dialog id = "dialog_1">
-        <h2>Réinventez les frigos</h2>
-        <p>Réinventez les frigos consiste pour nous à ...</p>
+        <h3>Réinventez les frigos</h3>
+        <img src="frigo_futuriste.jpg"
+        widht="200"
+        height = "160"/>
+        <p>Réinventez les frigos consiste pour nous à révolutionner la manière dont l'utilisateur approche la consommation au quotidien...</p>
         <button onclick="document.getElementById('dialog_1').close()">fermer</button>
     </dialog>
+
+    <dialog id = "dialog_2">
+        <h3>Assurer l'accès aux frigos pour tous.</h3>
+        <button onclick="document.getElementById('dialog_2').close()">fermer</button>
+    </dialog>
+
+    <dialog id = "dialog_3">
+        <h3>Vaincre la tyrannie de la consommation sur place.</h3>
+        <button onclick="document.getElementById('dialog_3').close()">fermer</button>
+    </dialog>
+
+    <dialog id = "dialog_4">
+        <h3>Gagner la confiance des utilisateurs.</h3>
+        <button onclick="document.getElementById('dialog_4').close()">fermer</button>
+    </dialog>
+
+    <dialog id = "dialog_5">
+        <h3>Survivre</h3>
+        <button onclick="document.getElementById('dialog_5').close()">fermer</button>
+    </dialog>
+    
     <section id = "historique">
     <h2>Notre Histoire</h2>
     <ul>
@@ -23,10 +47,10 @@
         <h2>Nos Missions</h2>
         <ol>
             <li><button onclick="document.getElementById('dialog_1').showModal()">Réinventez les frigos.</button></li><br>
-            <li>Assurer l'accès aux frigos pour tous.</li><br>
-            <li>Vaincre la tyrannie de la consommation sur place.</li><br>
-            <li>Gagner la confiance des utilisateurs.</li><br>
-            <li>Survivre</li>
+            <li><button onclick="document.getElementById('dialog_2').showModal()">Assurer l'accès aux frigos pour tous.</button></li><br>
+            <li><button onclick="document.getElementById('dialog_3').showModal()">Vaincre la tyrannie de la consommation sur place.</button></li><br>
+            <li><button onclick="document.getElementById('dialog_4').showModal()">Gagner la confiance des utilisateurs.</button></li><br>
+            <li><button onclick="document.getElementById('dialog_5').showModal()">Survivre</button></li>
         </ol>
 
     </section>
