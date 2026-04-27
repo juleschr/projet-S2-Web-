@@ -1,0 +1,130 @@
+
+    /* On remet tout à zéro */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Fond blanc comme sur le screenshot */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+
+    /* ---- HEADER ---- */
+    /* Barre du haut : blanche avec une légère ombre en bas */
+    header {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Logo FRIGO&CO */
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    /* "FRIGO" en vert comme sur le screenshot */
+    .logo .frigo {
+      color: #2ecc71;
+    }
+
+    /* "&CO" en violet comme sur le screenshot */
+    .logo .co {
+      color: #f60202;
+    }
+
+    /* Badge horloge : fond violet, texte blanc */
+    .horloge {
+      background-color: #f60202;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    /* ---- NAVIGATION ---- */
+    /* Barre de nav gris clair comme sur le screenshot */
+    nav {
+      background-color: #eeeeee;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      height: 48px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* On enlève les puces de la liste */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 4px;
+    }
+
+    main {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    main h1 {
+      font-size: 42px;
+      margin-bottom: 16px;
+      color: #222;
+    }
+
+    main p {
+      font-size: 15px;
+      color: #666;
+      max-width: 480px;
+      margin: 0 auto 28px auto;
+      line-height: 1.6;
+    }
+
+    /* Les deux boutons côte à côte */
+    .boutons {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    /* Bouton violet plein */
+    .btn-rouge {
+      background-color: #f60202;
+      color: white;
+      padding: 11px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    /* Bouton blanc avec bordure violette */
+    .btn-blanc {
+      background-color: white;
+      color:#f60202;
+      padding: 11px 24px;
+      border: 2px solid #f60202;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    /* ---- FOOTER ---- */
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 13px;
+      border-top: 1px solid #eee;
+      margin-top: 60px;
+    }
+
+  
