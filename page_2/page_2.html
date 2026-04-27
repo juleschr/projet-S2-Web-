@@ -7,6 +7,9 @@
     <title>A PROPOS</title>
 </head>
 <body>
+    <dialog id = "dialog_1">
+        <p>Réinventez les frigos consiste pour nous à ...</p>
+    </dialog>
     <section id = "historique">
     <h2>Notre Histoire</h2>
     <ul>
@@ -17,7 +20,7 @@
     <section id = "missions">
         <h2>Nos Missions</h2>
         <ol>
-            <li>Réinventez les frigos.</li><br>
+            <li><button onclick="page_2.getElementById('dialog_1').showModal()">Réinventez les frigos.</button></li><br>
             <li>Assurer l'accès aux frigos pour tous.</li><br>
             <li>Vaincre la tyrannie de la consommation sur place.</li><br>
             <li>Gagner la confiance des utilisateurs.</li><br>
