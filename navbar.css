@@ -11,6 +11,16 @@
       color: #f60202;
     }
 
+    /* Badge horloge : fond violet, texte blanc */
+    .horloge {
+      background-color: #f60202;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.6;
+    }
     /* Icône hamburger (les 3 traits) */
     .hamburger {
       display: flex;
@@ -27,5 +37,41 @@
       background-color: #333;
       border-radius: 2px;
     }
+
+    * Barre de nav gris clair comme sur le screenshot */
+    nav {
+      background-color: #eeeeee;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      height: 48px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* On enlève les puces de la liste */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 4px;
+    }
+
+    main {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    main h1 {
+      font-size: 42px;
+      margin-bottom: 16px;
+      color: #222;
+    }
+
+    main p {
+      font-size: 15px;
+      color: #666;
+      max-width: 480px;
+      margin: 0 auto 28px auto;
+      line-height: 1.6;
+    } 
 
     /* ---- CONTENU PRINCIPAL ---- */
