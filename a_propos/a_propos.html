@@ -49,7 +49,7 @@
 
     <dialog id = "dialog_1"> <!--précision de l'id afin de pouvoir appeler et modifier les fenêtres séparément-->
         <h3>Réinventez les frigos</h3>
-        <img src="frigo_futuriste.jpg">
+        <img src="frigo_futuriste.jpg"
         height = "160"/> <!--définition d'une valeur spécifique pour la hauteur afin d'avoir le texte débutant au même endroit pour chaque fenêtre-->
         <h4>Réinventez les frigos consiste pour nous à révolutionner la manière dont l'utilisateur approche la consommation au quotidien que ce soit lors du peti...</h4>
         <button onclick="document.getElementById('dialog_1').close()">fermer</button> <!--création d'un bouton permettant de fermer la fenêtre ouverte évitant un blocage-->
@@ -57,7 +57,7 @@
 
     <dialog id = "dialog_2">
         <h3>Assurer l'accès aux frigos pour tous.</h3>
-        <img src = "frigo_prisonnier.jpg">
+        <img src = "frigo_prisonnier.jpg"
         height = "160"/>
         <h4>Le frigo est l'une des inventions les plus importantes de l'histoire de l'humanité et de ce fait il est crucial que tout individu...</h4>
         <button onclick="document.getElementById('dialog_2').close()">fermer</button>
@@ -65,7 +65,7 @@
 
     <dialog id = "dialog_3">
         <h3>Vaincre la tyrannie de la consommation sur place.</h3>
-        <img src="image_resto.jpg"
+        <img src="../img.jpg/image_resto.jpg"
         height = "160"/>
         <h4>Il est selon nous crucial de promouvoir la conservation de la nourriture que ce soit sur le court ou long terme...</h4>
         <button onclick="document.getElementById('dialog_3').close()">fermer</button>
@@ -73,7 +73,7 @@
 
     <dialog id = "dialog_4">
         <h3>Gagner la confiance des utilisateurs.</h3>
-        <img src = "frigo_rassurant.jpg"
+        <img src = "../img.jpg/frigo_rassurant.jpg"
         height = "160"/>
         <h4>Il est important pour nous d'être le plus ouvert possible vis à vis de nos clients et ce en tout instant sauf lors d'une crise économique ou la survie de l'entreprise sera mis en priorité...</h4>
         <button onclick="document.getElementById('dialog_4').close()">fermer</button>
@@ -81,11 +81,15 @@
 
     <dialog id = "dialog_5">
         <h3>Survivre</h3>
-        <img src = "frigo_dore.jpg"
+        <img src = "../img.jpg/frigo_dore.jpg"
         height = "160"/>
         <h4>Notre objectif le plus important reste la survie de l'entreprise et nous sommes prêts à employer tous les moyens légaux afin d'atteindre cet objectif de la manière la plus sereine possible.</h4>
         <button onclick="document.getElementById('dialog_5').close()">fermer</button>
     </dialog>
+
+    <section id = "menu"> // barre menu en haut de la page
+        
+    </section>
 
     <section id = "historique"> <!--les sections se réfèrent ici aux différentes parties de la page délimitées par un titre surligné-->
     <h2>Notre Histoire</h2>
@@ -102,7 +106,7 @@
             <li><button onclick="document.getElementById('dialog_2').showModal()">Assurer l'accès aux frigos pour tous.</button></li><br>
             <p>Le frigo est l'une des inventions les plus importantes de l'histoire de l'humanité et de ce fait il est crucial que tout individu y est accès afin d'assurer sa survie. Ici on considère le manque d'accès au frigo comme un crime que nous nous devons d'arrêter et ce quel qu'en soit le coût</p>
             <li><button onclick="document.getElementById('dialog_3').showModal()">Vaincre la tyrannie de la consommation sur place.</button></li><br>
-            <p>Il est selon nous crucial de promouvoir la conservation de la nourriture que ce soit sur le court ou long terme. En effet nous considérons que devoir se déplacer dans l'unique but d'aller se faire préparer à manger consiste en une erreur que nous cherchons à corriger de la anière la plus radicale et rapide possible./p>
+            <p>Il est selon nous crucial de promouvoir la conservation de la nourriture que ce soit sur le court ou long terme. En effet nous considérons que devoir se déplacer dans l'unique but d'aller se faire préparer à manger consiste en une erreur que nous cherchons à corriger de la manière la plus radicale et rapide possible.</p>
             <li><button onclick="document.getElementById('dialog_4').showModal()">Gagner la confiance des utilisateurs.</button></li><br>
             <p>Il est important pour nous d'être le plus ouvert possible vis à vis de nos clients et ce en tout instant sauf lors d'une crise économique ou la survie de l'entreprise sera mis en priorité. Dans ce cas là, nous serons obligé d'augmenter nos prix de manière irrationnelle afin de payer des factures astronomiques qui ne manquerons de venir nous mettre des bâtons dans les roues.</p>
             <li><button onclick="document.getElementById('dialog_5').showModal()">Survivre</button></li>
