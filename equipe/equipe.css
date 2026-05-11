@@ -267,6 +267,12 @@ footer {
   padding: 20px;
 }
 
+.image-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
 /* En-tête avec titre et bouton mode édition */
 .boutton_edition {
   display: flex;
