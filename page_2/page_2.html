@@ -2,11 +2,48 @@
 <html lang = "fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="page_2.css"> <!--lien avec le fichier css-->
     <title>A PROPOS</title>
 </head>
+
+
 <body>
+
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+        <span class="frigo">FRIGO</span><span style="color:#222">&</span><span class="co">CO</span>
+        </div>
+
+        <!-- Horloge : les id "heure" et "date" sont mis à jour par le JavaScript -->
+        <div class="horloge">
+        <div id="heure">00:00:00</div>
+        <div id="date">00/00/0000</div>
+        </div>
+    </header>
+
+    <nav>
+
+    <!-- Icône hamburger (3 traits) -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Liens -->
+    <ul>
+      <li><a href="../index/index.html">Accueil</a></li>
+      <li><a href="#">à propos</a></li>
+      <li><a href="#">produits</a></li>
+      <li><a href="equipe.html">equipe</a></li>
+      <li><a href="#">contact</a></li>
+      <li><a href="#">nous trouver</a></li>
+    </ul>
+
+  </nav>
+
     <dialog id = "dialog_1"> <!--précision de l'id afin de pouvoir appeler et modifier les fenêtres séparément-->
         <h3>Réinventez les frigos</h3>
         <img src="../img.jpg/frigo_futuriste.jpg"
@@ -47,10 +84,6 @@
         <button onclick="document.getElementById('dialog_5').close()">fermer</button>
     </dialog>
 
-    <section id = "menu"> // barre menu en haut de la page
-        
-    </section>
-
     <section id = "historique"> <!--les sections se réfèrent ici aux différentes parties de la page délimitées par un titre surligné-->
     <h2>Notre Histoire</h2>
     <ul>
@@ -83,4 +116,9 @@
     </section>
     <script src="page_2.js"></script> <!--lien fichier javascript-->
 </body>
+
+<footer>
+    © 2026 FRIGO&CO — Tous droits réservés
+  </footer>
+
 </html>
