@@ -1,0 +1,107 @@
+ /* On remet tout à zéro */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Fond blanc comme sur le screenshot */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+
+    /* ---- HEADER ---- */
+    /* Barre du haut : blanche avec une légère ombre en bas */
+    header {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Logo FRIGO&CO */
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    /* "FRIGO" en vert comme sur le screenshot */
+    .logo .frigo {
+      color: #2ecc71;
+    }
+
+    /* "&CO" en violet comme sur le screenshot */
+    .logo .co {
+      color: #f60202;
+    }
+
+    /* Badge horloge : fond violet, texte blanc */
+    .horloge {
+      background-color: #f60202;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    /* ---- NAVIGATION ---- */
+    /* Barre de nav gris clair comme sur le screenshot */
+    nav {
+      background-color: #eeeeee;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      height: 48px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* On enlève les puces de la liste */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 4px;
+    }
+
+    main {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    main h1 {
+      font-size: 42px;
+      margin-bottom: 16px;
+      color: #222;
+    }
+
+
+
+
+body{
+    text-align: left;
+    
+}
+
+h2{
+        background-color: rgba(128, 255, 0, 0.663);
+    }
+
+li{
+    background-color: rgba(0, 0, 255, 0.021); 
+}
+
+dialog{
+    text-align: center;
+    background-color: rgba(25, 121, 195, 0.86);
+}
+
+button{
+    color:blue;
+    background-color: white;
+    border-color: white;
+}

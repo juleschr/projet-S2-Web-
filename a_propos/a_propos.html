@@ -3,13 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
-    <link rel="stylesheet" href="page_2.css"> <!--lien avec le fichier css-->
+    <link rel="stylesheet" href="a_propos.css"> <!--lien avec le fichier css-->
+    <link rel="stylesheet" href="../navbar.css">
+    <script src="../index/horloge.js" defer></script>
     <title>A PROPOS</title>
 </head>
 <body>
+    <!-- HEADER -->
+  <header>
+
+    <!-- Logo -->
+    <div class="logo">
+      <span class="frigo">FRIGO</span><span style="color:#222">&</span><span class="co">CO</span>
+    </div>
+
+    <!-- Horloge : les id "heure" et "date" sont mis à jour par le JavaScript -->
+    <div class="horloge">
+      <div id="heure">00:00:00</div>
+      <div id="date">00/00/0000</div>
+    </div>
+
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+
+    <!-- Icône hamburger (3 traits) -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Liens -->
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="../a_propos/a_propos.html">à propos</a></li>
+      <li><a href="#">produits</a></li>
+      <li><a href="../equipe/equipe.html">equipe</a></li>
+      <li><a href="#">contact</a></li>
+      <li><a href="../page_6/page_6.html">nous trouver</a></li>
+    </ul>
+
+  </nav>
+
     <dialog id = "dialog_1"> <!--précision de l'id afin de pouvoir appeler et modifier les fenêtres séparément-->
         <h3>Réinventez les frigos</h3>
-        <img src="frigo_futuriste.jpg"
+        <img src="frigo_futuriste.jpg">
         height = "160"/> <!--définition d'une valeur spécifique pour la hauteur afin d'avoir le texte débutant au même endroit pour chaque fenêtre-->
         <h4>Réinventez les frigos consiste pour nous à révolutionner la manière dont l'utilisateur approche la consommation au quotidien que ce soit lors du peti...</h4>
         <button onclick="document.getElementById('dialog_1').close()">fermer</button> <!--création d'un bouton permettant de fermer la fenêtre ouverte évitant un blocage-->
@@ -17,7 +57,7 @@
 
     <dialog id = "dialog_2">
         <h3>Assurer l'accès aux frigos pour tous.</h3>
-        <img src = "frigo_prisonnier.jpg"
+        <img src = "frigo_prisonnier.jpg">
         height = "160"/>
         <h4>Le frigo est l'une des inventions les plus importantes de l'histoire de l'humanité et de ce fait il est crucial que tout individu...</h4>
         <button onclick="document.getElementById('dialog_2').close()">fermer</button>

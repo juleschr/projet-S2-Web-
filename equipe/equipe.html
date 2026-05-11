@@ -5,140 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../navbar.css">
     <link rel="stylesheet" href="equipe.css">
-    <script src="../index/horloge.js"defer></script>
+    <script src="../index/horloge.js" defer></script>
+    <script src="grattage.js" defer></script>
     <title>Page équipe</title>
 </head>
 <body>
-    <header
+
+    <header>
         <!-- Logo -->
         <div class="logo">
-        <span class="frigo">FRIGO</span><span style="color:#222">&</span><span class="co">CO</span>
+            <span class="frigo">FRIGO</span><span style="color:#222">&</span><span class="co">CO</span>
         </div>
 
-        <!-- Horloge : les id "heure" et "date" sont mis à jour par le JavaScript -->
+        <!-- Horloge -->
         <div class="horloge">
-        <div id="heure">00:00:00</div>
-        <div id="date">00/00/0000</div>
+            <div id="heure">00:00:00</div>
+            <div id="date">00/00/0000</div>
         </div>
     </header>
 
-<!-- NAVIGATION -->
-  <nav>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="../index/index.html">Accueil</a></li>
+            <li><a href="../a_propos/a_propos.html">à propos</a></li>
+            <li><a href="#">produits</a></li>
+            <li><a href="equipe.html">equipe</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="../page_6/page_6.html">nous trouver</a></li>
+        </ul>
+    </nav>
 
-    <!-- Icône hamburger (3 traits) -->
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+    <!-- CONTENU PRINCIPAL -->
+    <div class="team-container">
+        <div class="boutton_edition">
+            <h1>Notre Équipe :</h1>
+            <input class="boutton_modeedition" type="button" value="Mode Edition" />
+        </div>
+
+        <div class="image-row">
+            <!-- Image 1 -->
+            <div class="image-block">
+                <div class="image-container">
+                    <img src="../img.png/Merlin.png" alt="photo Merlin" class="photo" />
+                    <canvas class="grattage-canvas"></canvas>
+                </div>
+                <p class="name">Merlin</p>
+                <p class="job">Ingénieur & Commercial</p>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="image-block">
+                <div class="image-container">
+                    <img src="../img.png/Arthure.png" alt="photo Arthure" class="photo" />
+                    <canvas class="grattage-canvas"></canvas>
+                </div>
+                <p class="name">Arthure Jandot</p>
+                <p class="job">Ingénieur & Développeur</p>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="image-block">
+                <div class="image-container">
+                    <img src="../img.png/Jules.png" alt="photo Jules" class="photo" />
+                    <canvas class="grattage-canvas"></canvas>
+                </div>
+                <p class="name">Jules Chevrier</p>
+                <p class="job">Ingénieur & Designer</p>
+            </div>
+        </div>
+
+        <!-- Mini-paragraphe -->
+        <p class="minipara"></p>
+
+        <!-- Biographies -->
+        <div class="bio-row">
+            <div class="bio">
+                <h2 style="color: #ecf013">Biographie de Merlin</h2>
+                <p>Merlin est un ingénieur et entrepreneur ambitieux.</p>
+            </div>
+            <div class="bio">
+                <h2 style="color: #094f21">Biographie Nathan</h2>
+                <p>Arthure</p>
+            </div>
+            <div class="bio">
+                <h2 style="color: #000000">Biographie Jules</h2>
+                <p></p>
+            </div>
+        </div>
     </div>
 
-    <!-- Liens -->
-    <ul>
-      <li><a href="../index/index.html">Accueil</a></li>
-      <li><a href="#">à propos</a></li>
-      <li><a href="#">produits</a></li>
-      <li><a href="equipe.html">equipe</a></li>
-      <li><a href="#">contact</a></li>
-      <li><a href="#">nous trouver</a></li>
-    </ul>
+    <!-- Bouton quitter le mode édition -->
+    <input type="button" id="quitEditMode" value="Quitter le mode édition" />
 
-  </nav>
-    <!--Contenue principale-->
-        <div class="team-container">
-      <div class="boutton_edition">
-        <h1>Notre Équipe :</h1>
-        <!-- Ajout du bouton Edition Mode : -->
-        <input
-          class="boutton_modeedition"
-          type="button"
-          value="Mode Edition"
-          onclick="verif_modeedition()"
-        />
-      </div>
-      <div class="image-row">
-          <!-- Image 1 -->
-        <div class="image-block">
-          <div class="image-container">
-            <img src="../img.png/Merlin.png" alt="photo Merlin" class="photo" />
-            <canvas class="grattage-canvas"></canvas>
-          </div>
-          <p class="name">Merlin</p>
-          <p class="job">Ingénieur & Commercial</p>
-        </div>
-        <!-- Image 2 -->
-        <div class="image-block">
-          <div class="image-container">
-            <img
-              src="../img.png/Arthure.png"
-              alt="photo Arthure"
-              class="photo"
-              style="background-color: #3241c2"
-            />
-            <canvas class="grattage-canvas"></canvas>
-          </div>
-          <p class="name">Arthure Jandot</p>
-          <p class="job">Ingénieur & Développeur</p>
-        </div>
-        <!-- Image 3 -->
-        <div class="image-block">
-          <div class="image-container">
-            <img
-              src="../img.png/Jules.png"
-              alt="photo Jules"
-              class="photo"
-              style="background-color: #3241c2"
-            />
-            <canvas class="grattage-canvas"></canvas>
-          </div>
-          <p class="name">Jules Chevrier</p>
-          <p class="job">Ingénieur & Designer</p>
-        </div>
-      </div>
-
-      <!-- Section mini-paragraphe -->
-      <p class="minipara">
-        
-      </p>
-
-      <!-- Section Biographies -->
-      <div class="bio-row">
-        <!-- Biographie 1 -->
-        <div class="bio">
-          <h2 style="color: #ecf013">Biographie de Merlin</h2>
-          <p>
-            Merlin est un ingénieur et entrepreneur Ambitieux , 
-          </p>
-          </p>
-        </div>
-        <!-- Biographie 2 -->
-        <div class="bio">
-          <h2 style="color: #094f21">Biographie Arthure</h2>
-          <p>
-           Arthure 
-          </p>
-        </div>
-         <!-- Biographie 3 -->
-        <div class="bio">
-          <h2 style="color: #000000">Biographie Jules</h2>
-          <p>
-            
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Ajouter du boutton pour quitter le mode edition -->
-    <input
-      type="button"
-      id="quitEditMode"
-      value="Quitter le mode édition"
-      style="display: none; margin: 20px auto; display: block"
-    />
-
-     <!-- FOOTER -->
-  <footer>
-    © 2026 FRIGO&CO — Tous droits réservés
-  </footer>
+    <!-- FOOTER -->
+    <footer>
+        © 2026 FRIGO&CO — Tous droits réservés
+    </footer>
 
 </body>
 </html>
