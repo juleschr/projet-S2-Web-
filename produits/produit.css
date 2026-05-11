@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+h1 {
+    margin: 20px;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    }
+
+/* Logo FRIGO&CO */
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* "FRIGO" en vert comme sur le screenshot */
+.logo .frigo {
+    color: #2ecc71;
+}
+
+/* "&CO" en violet comme sur le screenshot */
+.logo .co {
+    color: #f60202;
+}
+
+nav {
+    background-color: #eeeeee;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+      list-style: none;
+      display: flex;
+      gap: 4px;
+    }
+
+/* Produits */
+
+.produits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.produit_0 {
+    width: 10px;
+    height: 13px;
+    border-radius: 2px;
+    margin: auto;
+    text-align: center;
+}
+
+.produit {
+    background: white;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.produit img {
+    width: 10%;
+    cursor: pointer;
+}
+
+#bandeau {
+    display: none;
+    background: #ff7300;
+    color: #e42107;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+/* Bouton*/
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* FILTRES */
+.filtres {
+    margin: 20px;
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+}

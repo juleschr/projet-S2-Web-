@@ -1,4 +1,5 @@
- function mettreAJourHorloge() {
+
+    function mettreAJourHorloge() {
 
       // On récupère la date et l'heure actuelles
       var maintenant = new Date();
@@ -30,3 +31,5 @@
 
     // Puis toutes les secondes (1000 millisecondes)
     setInterval(mettreAJourHorloge, 1000);
+
+  

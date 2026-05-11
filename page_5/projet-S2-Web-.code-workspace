@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "projet-S2-Web-",
+			"path": ".."
+		},
+		{
+			"name": "Projet",
+			"path": "../../../Isen/JS/Projet"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "projet-S2-Web-"
+	}
+}

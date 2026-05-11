@@ -1,4 +1,5 @@
-  /* On remet tout à zéro */
+
+    /* On remet tout à zéro */
     * {
       margin: 0;
       padding: 0;
@@ -125,3 +126,5 @@
       border-top: 1px solid #eee;
       margin-top: 60px;
     }
+
+  
