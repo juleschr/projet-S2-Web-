@@ -1,107 +1,109 @@
- /* On remet tout à zéro */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* Fond blanc comme sur le screenshot */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: white;
-    }
-
-    /* ---- HEADER ---- */
-    /* Barre du haut : blanche avec une légère ombre en bas */
-    header {
-      background-color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    /* Logo FRIGO&CO */
-    .logo {
-      font-size: 26px;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
-
-    /* "FRIGO" en vert comme sur le screenshot */
-    .logo .frigo {
-      color: #2ecc71;
-    }
-
-    /* "&CO" en violet comme sur le screenshot */
-    .logo .co {
-      color: #f60202;
-    }
-
-    /* Badge horloge : fond violet, texte blanc */
-    .horloge {
-      background-color: #f60202;
-      color: white;
-      padding: 8px 16px;
-      border-radius: 8px;
-      text-align: center;
-      font-size: 13px;
-      line-height: 1.6;
-    }
-
-    /* ---- NAVIGATION ---- */
-    /* Barre de nav gris clair comme sur le screenshot */
-    nav {
-      background-color: #eeeeee;
-      padding: 0 16px;
-      display: flex;
-      align-items: center;
-      height: 48px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    /* On enlève les puces de la liste */
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 4px;
-    }
-
-    main {
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    main h1 {
-      font-size: 42px;
-      margin-bottom: 16px;
-      color: #222;
-    }
-
-
-
-
 body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: left;
-    
+}
+
+/* HEADER */
+
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo{
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo .frigo{
+    color: #2ecc71;
+}
+
+.logo .co{
+    color: #f60202;
+}
+
+.horloge{
+    background-color: #f60202;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+
+nav{
+    background-color: #eeeeee;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+/* SECTIONS */
+
+section{
+    padding: 20px;
 }
 
 h2{
-        background-color: rgba(128, 255, 0, 0.663);
-    }
+    background-color: #2ecc71;
+    padding: 8px;
+}
 
 li{
-    background-color: rgba(0, 0, 255, 0.021); 
+    background-color: rgba(0, 0, 255, 0.021);
+    margin-bottom: 10px;
+    padding: 10px;
 }
+
+/* DIALOG */
 
 dialog{
     text-align: center;
     background-color: rgba(25, 121, 195, 0.86);
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 button{
-    color:blue;
+    color: blue;
     background-color: white;
-    border-color: white;
+    border: 1px solid white;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+    font-size: 13px;
+    border-top: 1px solid #eee;
+    margin-top: 60px;
 }
