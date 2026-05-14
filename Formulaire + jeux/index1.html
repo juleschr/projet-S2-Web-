@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact & Blackjack</title>
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <ul>
+        <li><a href="../index/index.html">Accueil</a></li>
+        <li><a href="../a_propos/a_propos.html">À propos</a></li>
+        <li><a href="../produits/produit.html">Produits</a></li>
+        <li><a href="../equipe/equipe.html">Equipe</a></li>
+        <li><a href="index1.html">Contact</a></li>
+        <li><a href="../nous_trouver/nous_trouver.html">Nous trouver</a></li>
+    </ul>
+
+    <!-- FORMULAIRE DE CONTACT -->
+    <!-- L’utilisateur doit remplir ce formulaire AVANT de jouer -->
+    <form id="contactForm">
+        <h1>Contactez-nous</h1>
+
+        <!-- Champ Prénom + Nom -->
+        <input type="text" id="fullname" placeholder="Prénom Nom">
+        <div id="errName" class="error"></div>
+
+        <!-- Champ Email -->
+        <input type="email" id="email" placeholder="email@example.com">
+        <div id="errEmail" class="error"></div>
+
+        <!-- Champ Message -->
+        <textarea id="message" placeholder="Votre message"></textarea>
+        <div id="errMessage" class="error"></div>
+
+        <!-- Bouton désactivé tant que le formulaire n’est pas valide -->
+        <button id="sendBtn" disabled>Envoyer</button>
+    </form>
+
+
+    <!-- ZONE DE JEU -->
+    <!-- Cachée par défaut, affichée après validation du formulaire -->
+    <div id="gameZone" style="display:none;">
+
+        <!-- RÈGLES DU BLACKJACK -->
+        <div id="rules">
+
+            <h1>Blackjack</h1>
+
+            <p>
+            <strong>But du jeu :</strong>
+            atteindre <strong>21</strong> sans le dépasser.
+            </p>
+
+            <h3> Règles essentielles</h3>
+            <ul>
+                <li>Les cartes 2 à 10 valent leur valeur.</li>
+                <li>Le valet, la dame et le roi valent <strong>10</strong>.</li>
+                <li>L’as vaut <strong>1 ou 11</strong>.</li>
+            </ul>
+
+            <h3> Le croupier</h3>
+            <ul>
+                <li>Le croupier tire jusqu’à <strong>17 minimum</strong>.</li>
+                <li>S’il est plus proche de 21 que vous, vous perdez.</li>
+            </ul>
+        </div>
+
+        <!-- Messages dynamiques (victoire, défaite, instructions) -->
+        <p id="status"></p>
+
+        <!-- Main du croupier -->
+        <div class="hand">
+            <h3>Croupier : <span id="dealer-score">?</span></h3>
+            <div id="dealer-hand" class="cards"></div>
+        </div>
+
+        <!-- Main du joueur -->
+        <div class="hand">
+            <h3>Joueur : <span id="player-score">0</span></h3>
+            <div id="player-hand" class="cards"></div>
+        </div>
+
+        <!-- Contrôles du jeu -->
+        <button id="new-game">Nouvelle partie</button>
+        <button id="hit" disabled>Tirer</button>
+        <button id="stand" disabled>Rester</button>
+    </div>
+
+    <!-- Script principal -->
+    <script src="page5.js"></script>
+</body>
+</html>
