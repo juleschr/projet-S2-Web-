@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="a_propos.css">
+    <link rel="stylesheet" href="a_propos.css"> <!--lien avec le fichier css-->
 
     <link rel="stylesheet" href="../navbar.css">
 
@@ -16,13 +16,13 @@
 <body>
 
 <header>
-
+    <!-- Logo -->
     <div class="logo">
         <span class="frigo">FRIGO</span>
         <span style="color:#222">&</span>
         <span class="co">CO</span>
     </div>
-
+    <!-- Horloge : les id "heure" et "date" sont mis à jour par le JavaScript -->
     <div class="horloge">
         <div id="heure">00:00:00</div>
         <div id="date">00/00/0000</div>
@@ -31,7 +31,6 @@
 </header>
 
 <nav>
-
     <!-- Icône hamburger (3 traits) -->
     <div class="hamburger">
       <span></span>
@@ -39,6 +38,7 @@
       <span></span>
     </div>
 
+    <!-- Liens -->
     <ul>
         <li><a href="../index/index.html">Accueil</a></li>
         <li><a href="a_propos.html"><b>À propos</b></a></li>
@@ -50,11 +50,11 @@
 
 </nav>
 
-<dialog id="dialog_1">
+<dialog id="dialog_1"> <!--précision de l'id afin de pouvoir appeler et modifier les fenêtres séparément-->
     <h3>Réinventez les frigos</h3>
 
     <img src="../img.jpg/frigo_futuriste.jpg"
-         height="160">
+         height="160"> <!--définition d'une valeur spécifique pour la hauteur afin d'avoir le texte débutant au même endroit pour chaque fenêtre-->
 
     <h4>
         Réinventer les frigos consiste pour nous à
@@ -64,7 +64,7 @@
 
     <button onclick="document.getElementById('dialog_1').close()">
         Fermer
-    </button>
+    </button> <!--création d'un bouton permettant de fermer la fenêtre ouverte évitant un blocage-->
 </dialog>
 
 <dialog id="dialog_2">
@@ -74,8 +74,7 @@
          height="160">
 
     <h4>
-        Le frigo est l'une des inventions les plus
-        importantes de l'histoire de l'humanité.
+        Le frigo est l'une des inventions les plus importantes de l'histoire de l'humanité et de ce fait il est crucial que tout individu...
     </h4>
 
     <button onclick="document.getElementById('dialog_2').close()">
@@ -90,8 +89,7 @@
          height="160">
 
     <h4>
-        Nous souhaitons promouvoir la conservation
-        de la nourriture sur le court et long terme.
+        Il est selon nous crucial de promouvoir la conservation de la nourriture que ce soit sur le court ou long terme...
     </h4>
 
     <button onclick="document.getElementById('dialog_3').close()">
@@ -106,8 +104,7 @@
          height="160">
 
     <h4>
-        Nous voulons être les plus transparents
-        possible avec nos clients.
+        Il est important pour nous d'être le plus ouvert possible vis à vis de nos clients et ce en tout instant sauf lors d'une crise économique ou la survie de l'entreprise sera mis en priorité...
     </h4>
 
     <button onclick="document.getElementById('dialog_4').close()">
@@ -122,8 +119,7 @@
          height="160">
 
     <h4>
-        La survie de l'entreprise reste notre
-        objectif principal.
+        Notre objectif le plus important reste la survie de l'entreprise et nous sommes prêts à employer tous les moyens légaux afin d'atteindre cet objectif de la manière la plus sereine possible.
     </h4>
 
     <button onclick="document.getElementById('dialog_5').close()">
@@ -131,15 +127,14 @@
     </button>
 </dialog>
 
-<section id="historique">
+<section id="historique"> <!--les sections se réfèrent ici aux différentes parties de la page délimitées par un titre surligné-->
 
     <h2>Notre Histoire</h2>
 
     <ul>
 
         <li>
-            Tout a commencé en 2025 à Bologna lorsque
-            nous avons décidé de créer des frigos innovants.
+            Tout a commencé en 2025 à Bologna lorsque nous avons décidé soudainement que notre avenir se situait dans les frigos, cet objet ô combien important pour l'ensemble de la population.C'est à ce moment que nous nous sommes rendu compte de la bénédiction qu'était cet objet dans la vie de tous.
         </li>
 
         <br>
@@ -164,11 +159,10 @@
 
             <button onclick="document.getElementById('dialog_1').showModal()">
                 Réinventer les frigos
-            </button>
+            </button> <!--définition des boutons ouvrant les différentes fenêtres modales expliquant les missions de la start-up-->
 
             <p>
-                Nous voulons rendre l'utilisation
-                des frigos plus pratique et agréable.
+                Réinventez les frigos consiste pour nous à révolutionner la manière dont l'utilisateur approche la consommation au quotidien que ce soit lors du petit-déjeuner, déjeuner, dîner, goûter, repas nocturne, casse-croûte ou toute autre utilisation liée à la consommation de quelconque produit. Il est donc essentiel pour nous que l'utilisation du frigo soit la plus pratique et plaisante possible et nous sommes prêts à innover des frigos encore jamais vu afin de remplir au mieux ces attentes.
             </p>
 
         </li>
@@ -180,8 +174,7 @@
             </button>
 
             <p>
-                Chaque individu devrait avoir accès
-                à un moyen de conserver sa nourriture.
+                Le frigo est l'une des inventions les plus importantes de l'histoire de l'humanité et de ce fait il est crucial que tout individu y est accès afin d'assurer sa survie. Ici on considère le manque d'accès au frigo comme un crime que nous nous devons d'arrêter et ce quel qu'en soit le coût
             </p>
 
         </li>
@@ -193,8 +186,7 @@
             </button>
 
             <p>
-                Nous encourageons la conservation
-                alimentaire sur le long terme.
+                Il est selon nous crucial de promouvoir la conservation de la nourriture que ce soit sur le court ou long terme. En effet nous considérons que devoir se déplacer dans l'unique but d'aller se faire préparer à manger consiste en une erreur que nous cherchons à corriger de la manière la plus radicale et rapide possible.
             </p>
 
         </li>
@@ -206,8 +198,7 @@
             </button>
 
             <p>
-                Nous souhaitons être transparents
-                avec nos clients.
+               Il est important pour nous d'être le plus ouvert possible vis à vis de nos clients et ce en tout instant sauf lors d'une crise économique ou la survie de l'entreprise sera mis en priorité. Dans ce cas là, nous serons obligé d'augmenter nos prix de manière irrationnelle afin de payer des factures astronomiques qui ne manquerons de venir nous mettre des bâtons dans les roues.
             </p>
 
         </li>
@@ -219,8 +210,7 @@
             </button>
 
             <p>
-                Notre priorité reste la pérennité
-                de l'entreprise.
+                Notre objectif le plus important reste la survie de l'entreprise et nous sommes prêts à employer tous les moyens légaux afin d'atteindre cet objectif de la manière la plus sereine possible. Nous ne voudrions en aucun cas ne pas être ouvert à nos clients et ce en toute circonstances afin de garantir les meilleures chances de survie de l'entreprise sur le long terme. Nous ne laisserons aucune crise économique ou catastrophe naturelle de tous type nous empêcher d'accomplir notre devoir en tant que créateur, vendeur, producteur, designeur et voleur de frigos.
             </p>
 
         </li>
@@ -236,15 +226,13 @@
     <ul>
 
         <li>
-            Nous voyons chaque frigo comme
-            une œuvre d'art.
+            Nous voyons chaque frigo comme une oeuvre d'art et de ce fait nous voulons toujours créer des frigos toujours plus unique, pratique et efficace
         </li>
 
         <br>
 
         <li>
-            Nous espérons répondre aux attentes
-            de nos futurs clients.
+            Nous espérons donc à l'avenir être à la hauteur des attentes de nos acheteurs et de continuer de promouvoir l'objet qui est indéniablement le plus important dans la vie de quiconque.(svp achetez nos produits sinon on va vraiment devoir fermer)
         </li>
 
     </ul>
@@ -252,7 +240,7 @@
 </section>
 
 <footer>
-    © 2026 FRIGO&CO — Tous droits réservés
+    © 2026 FRIGO&CO — Tous droits réservés <!--droits mis en bas de la page-->
 </footer>
 
 <script src="a_propos.js"></script>

@@ -32,9 +32,17 @@ dialog{
 }
 
 button{
-    color: blue;
-    background-color: white;
-    border: 1px solid white;
-    padding: 8px 12px;
+    color: white;
+    background-color: #f60202;
+    border: none;
+
+    padding: 16px 32px;
+
+    font-size: 18px;
+
+    border-radius: 8px;
+
     cursor: pointer;
+
+    transition: 0.3s;
 }
