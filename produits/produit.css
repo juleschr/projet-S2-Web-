@@ -7,7 +7,7 @@
 body{
   font-family:Arial;
 
-  /* ✅ MODIF : fond global comme screenshot */
+  /* fond global comme screenshot */
   background-color:#f5f5f5;
 }
 
@@ -15,7 +15,7 @@ body{
 header{
   background-color:white;
   display:flex;
-  justify-content:space-between; /* ✅ MODIF : logo gauche / horloge droite */
+  justify-content:space-between; 
   align-items:center;
   padding:10px 20px;
   border-bottom:1px solid #ddd;
@@ -40,8 +40,6 @@ header{
   text-align: center;
   font-size: 13px;
   line-height: 1.6;
-
-  /* ✅ MODIF : carré bien visible */
   min-width:90px;
 }
 
@@ -59,20 +57,18 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 25px; /* ✅ MODIF : espacement propre */
+  gap: 25px; 
 }
 
 /* LIENS */
 nav a{
-  text-decoration:none; /* ✅ MODIF : plus de soulignement */
+  text-decoration:none; 
   color:black;
 }
 
 /* MAIN */
 main{
   padding:30px;
-
-  /* ✅ MODIF : fond gris derrière produits */
   background-color:#f5f5f5;
   min-height:80vh;
 }
@@ -84,14 +80,14 @@ main{
   align-items:center;
   gap:40px;
 
-  /* ✅ MODIF : recentre parfaitement */
+
   max-width:700px;
   margin:0 auto;
 }
 
 /* PRODUIT */
 .card{
-  width:100%; /* ✅ MODIF : s’adapte au container */
+  width:100%; 
 
   background:white;
   border-radius:12px;
