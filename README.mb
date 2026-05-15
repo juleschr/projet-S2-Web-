@@ -1,0 +1,72 @@
+# Projet S2 - Site Web
+
+## Description
+Ce projet est un site web vitrine développé dans le cadre du **Semestre 2**. Il présente une interface moderne, attractive et fully responsive.
+
+Le site inclut plusieurs sections :  
+- Accueil  
+- Produits  
+- À propos  
+- Équipe  
+- Formulaire de contact  
+- Jeux interactifs  
+
+Le design met l’accent sur l’expérience utilisateur avec des animations fluides et une navigation intuitive.
+
+## Structure du projet
+
+projet-S2-W/
+├── index.html
+├── navbar.css
+├── Formulaire + jeux/
+├── a_propos/
+├── equipe/
+├── produits/
+├── index/
+├── img.jpg/
+├── img.png/
+
+
+## Fonctionnalités
+
+- **Design Responsive** : Optimisé pour ordinateurs, tablettes et mobiles
+- **Navigation fluide** avec barre fixe
+- **Section Produits** avec présentation visuelle
+- **Animations CSS** modernes et agréables
+- **Formulaire** de contact / commande
+- **Mini-jeux** intégrés pour plus d’interactivité
+- **Accessibilité** et structure sémantique
+
+## Technologies utilisées
+
+- **HTML5** - Structure du contenu
+- **CSS3** - Mise en page, design et animations
+- **JavaScript** - Interactions et jeux (si présent)
+
+## Comment tester le projet
+
+### Localement
+1. Télécharge ou clone le projet
+2. Ouvre le fichier **`index.html`** dans ton navigateur préféré
+
+### En ligne
+Lien GitHub Pages (à ajouter quand déployé) :  
+
+
+## Contributeurs
+
+- **julesch (Jules Chevrier)** — Développeur
+- **Nathan.J192837465(Nathant Jandot)** — Développeur
+- **El-mage (Merlin RAOULT-GRANIER) ** — Développeur
+
+
+
+
+## Comment contribuer
+
+Les contributions sont les bienvenues !
+
+1. Fork le projet
+2. Crée ta branche :
+   ```bash
+   git checkout -b feature/amélioration
