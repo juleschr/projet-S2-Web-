@@ -142,4 +142,4 @@ window.addEventListener("DOMContentLoaded", function () {
   // Attache les boutons APRÈS que le DOM existe
   document.querySelector(".boutton_modeedition").addEventListener("click", verif_modeedition);
   document.getElementById("quitEditMode").addEventListener("click", quitterModeEdition);
-});
+})
