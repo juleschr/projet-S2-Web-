@@ -29,7 +29,7 @@
 </header>
 
 <nav>
-
+    <!-- Liens -->
     <ul>
         <li><a href="../index/index.html">Accueil</a></li>
         <li><a href="a_propos.html"><b>À propos</b></a></li>
@@ -41,11 +41,11 @@
 
 </nav>
 
-<dialog id="dialog_1">
+<dialog id="dialog_1"> <!--précision de l'id afin de pouvoir appeler et modifier les fenêtres séparément-->
     <h3>Réinventez les frigos</h3>
 
     <img src="../img.jpg/frigo_futuriste.jpg"
-         height="160">
+         height="160"> <!--définition d'une valeur spécifique pour la hauteur afin d'avoir le texte débutant au même endroit pour chaque fenêtre-->
 
     <h4>
         Réinventer les frigos consiste pour nous à
@@ -55,7 +55,7 @@
 
     <button onclick="document.getElementById('dialog_1').close()">
         Fermer
-    </button>
+    </button> <!--création d'un bouton permettant de fermer la fenêtre ouverte évitant un blocage-->
 </dialog>
 
 <dialog id="dialog_2">
@@ -150,7 +150,7 @@
 
             <button onclick="document.getElementById('dialog_1').showModal()">
                 Réinventer les frigos
-            </button>
+            </button> <!--définition des boutons ouvrant les différentes fenêtres modales expliquant les missions de la start-up-->
 
             <p>
                 Réinventez les frigos consiste pour nous à révolutionner la manière dont l'utilisateur approche la consommation au quotidien que ce soit lors du petit-déjeuner, déjeuner, dîner, goûter, repas nocturne, casse-croûte ou toute autre utilisation liée à la consommation de quelconque produit. Il est donc essentiel pour nous que l'utilisation du frigo soit la plus pratique et plaisante possible et nous sommes prêts à innover des frigos encore jamais vu afin de remplir au mieux ces attentes.
@@ -231,7 +231,7 @@
 </section>
 
 <footer>
-    © 2026 FRIGO&CO — Tous droits réservés
+    © 2026 FRIGO&CO — Tous droits réservés <!--droits mis en bas de la page-->
 </footer>
 
 <script src="a_propos.js"></script>
