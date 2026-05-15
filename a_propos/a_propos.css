@@ -4,64 +4,6 @@ body{
     text-align: left;
 }
 
-/* HEADER */
-
-header{
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
-}
-
-.logo{
-    font-size: 26px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.logo .frigo{
-    color: #2ecc71;
-}
-
-.logo .co{
-    color: #f60202;
-}
-
-.horloge{
-    background-color: #f60202;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 13px;
-    line-height: 1.6;
-}
-
-/* NAVIGATION */
-
-nav{
-    background-color: #eeeeee;
-    padding: 0 16px;
-    display: flex;
-    align-items: center;
-    height: 48px;
-    border-bottom: 1px solid #ddd;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    padding: 0;
-}
-
-nav a{
-    text-decoration: none;
-    color: black;
-}
-
 /* SECTIONS */
 
 section{
@@ -95,15 +37,4 @@ button{
     border: 1px solid white;
     padding: 8px 12px;
     cursor: pointer;
-}
-
-/* FOOTER */
-
-footer{
-    text-align: center;
-    padding: 20px;
-    color: #aaa;
-    font-size: 13px;
-    border-top: 1px solid #eee;
-    margin-top: 60px;
 }
