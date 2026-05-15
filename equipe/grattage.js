@@ -133,13 +133,13 @@ function quitterModeEdition() {
 }
 
 // =============================================
-// INITIALISATION — attend que le DOM soit prêt
+// INITIALISATION
 // =============================================
 window.addEventListener("DOMContentLoaded", function () {
-  // Lance le grattage sur les photos existantes
-  grattage();
+  
+  grattage();   // Initialise l'effet grattage
 
-  // Attache les boutons APRÈS que le DOM existe
+  // Attache les boutons une fois que le DOM est chargé
   document.querySelector(".boutton_modeedition").addEventListener("click", verif_modeedition);
   document.getElementById("quitEditMode").addEventListener("click", quitterModeEdition);
-})
+});
