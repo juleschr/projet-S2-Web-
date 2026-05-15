@@ -21,7 +21,7 @@
       if (mois     < 10) { mois     = "0" + mois;     }
 
       // On affiche dans le HTML
-      document.getElementById("heure").textContent = "il est " + heures + ":" + minutes + ":" + secondes;
+      document.getElementById("heure").textContent = heures + ":" + minutes + ":" + secondes;
       document.getElementById("date").textContent  = jour + "/" + mois + "/" + annee;
     }
 

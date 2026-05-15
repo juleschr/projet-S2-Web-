@@ -1,113 +1,166 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-}
-h1 {
-    margin: 20px;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-header {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
-    }
+body{
+  font-family:Arial;
+
+  /* ✅ MODIF : fond global comme screenshot */
+  background-color:#f5f5f5;
+}
+
+/* HEADER */
+header{
+  background-color:white;
+  display:flex;
+  justify-content:space-between; /* ✅ MODIF : logo gauche / horloge droite */
+  align-items:center;
+  padding:10px 20px;
+  border-bottom:1px solid #ddd;
+}
 
 /* Logo FRIGO&CO */
 .logo {
-    font-size: 26px;
-    font-weight: bold;
-    letter-spacing: 2px;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-/* "FRIGO" en vert comme sur le screenshot */
-.logo .frigo {
-    color: #2ecc71;
+.logo .frigo { color: #2ecc71; }
+.logo .co { color: #f60202; }
+
+/* HORLOGE */
+.horloge {
+  background-color: #f60202;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.6;
+
+  /* ✅ MODIF : carré bien visible */
+  min-width:90px;
 }
 
-/* "&CO" en violet comme sur le screenshot */
-.logo .co {
-    color: #f60202;
-}
-
+/* NAVIGATION */
 nav {
-    background-color: #eeeeee;
-    padding: 0 16px;
-    display: flex;
-    align-items: center;
-    height: 48px;
-    border-bottom: 1px solid #ddd;
+  background-color: #eeeeee;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  border-bottom: 1px solid #ddd;
 }
 
+/* MENU */
 nav ul {
-      list-style: none;
-      display: flex;
-      gap: 4px;
-    }
-
-/* Produits */
-
-.produits {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-.produit_0 {
-    width: 10px;
-    height: 13px;
-    border-radius: 2px;
-    margin: auto;
-    text-align: center;
+  list-style: none;
+  display: flex;
+  gap: 25px; /* ✅ MODIF : espacement propre */
 }
 
-.produit {
-    background: white;
-    padding: 15px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* LIENS */
+nav a{
+  text-decoration:none; /* ✅ MODIF : plus de soulignement */
+  color:black;
 }
 
-.produit img {
-    width: 10%;
-    cursor: pointer;
+/* MAIN */
+main{
+  padding:30px;
+
+  /* ✅ MODIF : fond gris derrière produits */
+  background-color:#f5f5f5;
+  min-height:80vh;
 }
 
-#bandeau {
-    display: none;
-    background: #ff7300;
-    color: #e42107;
-    padding: 15px;
-    margin: 20px;
-    text-align: center;
-    border-radius: 8px;
-}
-/* Bouton*/
-.btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 15px;
-    background: #3498db;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-}
-#topBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+/* CONTAINER */
+.container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:40px;
+
+  /* ✅ MODIF : recentre parfaitement */
+  max-width:700px;
+  margin:0 auto;
 }
 
-/* FILTRES */
-.filtres {
-    margin: 20px;
+/* PRODUIT */
+.card{
+  width:100%; /* ✅ MODIF : s’adapte au container */
+
+  background:white;
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.1);
+
+  border:3px solid #2ecc71;
 }
 
-input {
-    padding: 5px;
-    margin: 5px;
+.card:nth-child(2){border-color:#3498db;}
+.card:nth-child(3){border-color:#e67e22;}
+.card:nth-child(4){border-color:#9b59b6;}
+
+.card img{
+  width:100%;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.card h3{margin:10px 0;}
+.card p{color:#555;}
+
+.price{
+  color:#f60202;
+  font-weight:bold;
+  margin:10px 0;
+}
+
+button{
+  padding:10px;
+  background:#2ecc71;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* MESSAGE ACHAT */
+#achat{
+  position:fixed;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#3498db;
+  color:white;
+  padding:15px 25px;
+  border-radius:8px;
+  display:none;
+}
+
+/* FLECHE */
+#zone-fleche{
+  margin-top:30px;
+  text-align:center;
+}
+
+#top{
+  background:#f60202;
+  color:white;
+  padding:12px 18px;
+  border-radius:8px;
+  cursor:pointer;
+  display:inline-block;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+  color:#aaa;
 }

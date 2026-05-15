@@ -2,42 +2,110 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Contact & Jeu</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Blackjack</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="page5.js" defer></script>
 </head>
 <body>
+<header>
+    <div class="logo">
+        <span class="frigo">FRIGO</span>&<span class="co">CO</span>
+    </div>
 
-    <h2 class="title">Contactez-nous</h2>
 
-    <form id="contactForm" novalidate>
+    <div class="horloge">
+        <div id="heure">00:00:00</div>
+        <div id="date">00/00/0000</div>
+    </div>
+</header>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul>
+        <li><a href="../index/index.html">Accueil</a></li>
+        <li><a href="../a_propos/a_propos.html">À propos</a></li>
+        <li><a href="../produits/produit.html">Produits</a></li>
+        <li><a href="../equipe/equipe.html">Equipe</a></li>
+        <li><a href="form.html"><b>Contact</b></a></li>
+        <li><a href="../nous_trouver/nous_trouver.html">Nous trouver</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <!-- FORMULAIRE -->
+    <h1>Contactez-nous</h1>
+
+    <form id="contactForm">
         <input type="text" id="fullname" placeholder="Prénom Nom">
-        <p class="error" id="errName"></p>
+        <div id="errName" class="error"></div>
 
         <input type="email" id="email" placeholder="email@example.com">
-        <p class="error" id="errEmail"></p>
+        <div id="errEmail" class="error"></div>
 
-        <textarea id="message" placeholder="Votre message doit contenir 20 à 1000 caractères"></textarea>
-        <p class="error" id="errMessage"></p>
+        <textarea id="message" placeholder="Votre message"></textarea>
+        <div id="errMessage" class="error"></div>
 
         <button id="sendBtn" disabled>Envoyer</button>
     </form>
 
-    <p id="status" class="status"></p>
+    <div style="height:40px;"></div>
 
-    <!--Affichage du jeu lorque l'utilisateur appuie sur le bouton envoyer -->
-    <div id="gameZone" style="display:none; margin-top:40px;">
-        <h3>Jeu : Pierre Feuille Ciseaux</h3>
+    <!-- JEU -->
+    <div id="gameZone" style="display:none;">
 
-        <div class="choices">
-            <button class="choice" data-value="pierre">Pierre</button>
-            <button class="choice" data-value="feuille">Feuille</button>
-            <button class="choice" data-value="ciseaux">Ciseaux</button>
+        <!-- REGLES -->
+        <div id="rules">
+
+            <h1>Blackjack</h1>
+
+            <p>
+            <strong>But du jeu :</strong>
+            atteindre <strong>21</strong> sans le dépasser.
+            </p>
+
+            <h3>Règles essentielles</h3>
+            <ul>
+                <li>Les cartes 2 à 10 valent leur valeur.</li>
+                <li>Le valet, la dame et le roi valent 10.</li>
+                <li>L’as vaut 1 ou 11.</li>
+            </ul>
+
+            <h3>Le croupier</h3>
+            <ul>
+                <li>Le croupier tire jusqu’à 17 minimum.</li>
+                <li>S’il est plus proche de 21 que vous, vous perdez.</li>
+            </ul>
         </div>
 
-        <p id="result" class="result"></p>
+        <!-- STATUT -->
+        <p id="status"></p>
+
+        <!-- CROUPIER -->
+        <div class="hand">
+            <h3>Croupier : <span id="dealer-score">?</span></h3>
+            <div id="dealer-hand" class="cards"></div>
+        </div>
+
+        <!-- JOUEUR -->
+        <div class="hand">
+            <h3>Joueur : <span id="player-score">0</span></h3>
+            <div id="player-hand" class="cards"></div>
+        </div>
+
+        <!-- BOUTONS -->
+        <button id="new-game">Nouvelle partie</button>
+        <button id="hit" disabled>Tirer</button>
+        <button id="stand" disabled>Rester</button>
     </div>
 
-    <script src="page5.js"></script>
+</main>
 
 </body>
 </html>

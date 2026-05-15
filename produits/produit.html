@@ -5,102 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos produits</title>
     <link rel="stylesheet" href="produit.css">
+    <script src="produit.js" defer></script>
 </head>
 
 <body>
 
 <header>
-     <!-- Logo -->
-        <div class="logo">
-        <span class="frigo">FRIGO</span><span style="color:#222">&</span><span class="co">CO</span>
-        </div>
+    <div class="logo">
+        <span class="frigo">FRIGO</span>&<span class="co">CO</span>
+    </div>
 
+
+    <!-- Horloge : les id "heure" et "date" sont mis à jour par le JavaScript -->
+    <div class="horloge">
+        <div id="heure">00:00:00</div>
+        <div id="date">00/00/0000</div>
+    </div>
 </header>
+
 <nav>
-    <ul>
+  <ul>
         <li><a href="../index/index.html">Accueil</a></li>
         <li><a href="../a_propos/a_propos.html">À propos</a></li>
-        <li><a href="produit.html">Produits</a></li>
+        <li><a href="produit.html"><b>Produits</b></a></li>
         <li><a href="../equipe/equipe.html">Equipe</a></li>
-        <li><a href="../Formulaire + jeux/index1.html">Contact</a></li>
+        <li><a href="../Formulaire + jeux/form.html">Contact</a></li>
         <li><a href="../nous_trouver/nous_trouver.html">Nous trouver</a></li>
     </ul>
 </nav>
-<main class="produits">
 
-    <!-- Produit 1 -->
-    <article class="produit">
-        <img src="produit_0.png" alt="Produit en réduction">
-        <h3>Produit en réduction</h3>
-        <p>Fabriqué en France depuis 1900, ce frigo était considéré comme un chef d'oeuvre dans les années 80.
-            Cet article est vendu entre 101,99€ et 103,99€. </p>
-        <a href="https://canva.link/ubc3m9bpyg49tap" target="_blank" class="btn">Acheter</a>
-    </article>
+<main>
 
-    <!-- Produit 2 -->
-    <article class="produit">
-        <img src="produit_1.png" alt="Frigo de haute gamme">
-        <h3>Frigo de haute gamme</h3>
-        <p>
-            Utilisé par la majorité des habitants de la Terre, cet article est vendu pour 123,23 €.
-            Ce produit a été créé à la base pour gagner une compétition du plus beau frigo dans le monde.
-            Livraison gratuite et efficace.
-        </p>
-        <a href="https://canva.link/ubc3m9bpyg49tap" target="_blank" class="btn">Acheter</a>
-    </article>
+<h1 style="text-align:center;margin-bottom:30px;">Nos produits</h1>
 
-    <!-- Produit 3 -->
-    <article class="produit">
-        <img src="produit_2.png" alt="Produit de nettoyage">
-        <h3>Accessoire de nettoyage</h3>
-        <p>
-            Cet objet permet de nettoyer votre frigo sans laisser aucune trace de poussière. Très efficace
-            et peu cher => 89€. Offre limité du 10/04 au 09/06.
-        </p>
-        <a href="#" class="btn">Acheter</a>
-    </article>
+<div class="container">
 
-    <!-- Produit 4 -->
-    <article class="produit">
-        <img src="produit_3.png" alt="Produit de nettoyage">
-        <h3>Plante végétale </h3>
-        <p>
-            Cet objet permet de mettre de la décoration dans votre maison.
-        </p>
-        <a href="#" class="btn">Acheter</a>
-    </article>
+  <!-- PRODUIT 1 -->
+  <div class="card">
+    <img src="https://media.adeo.com/mkp/d6c62357d5c38c59c7dcab7ae183490c/media.jpg?width=650&height=650&format=jpg&quality=80&fit=bounds"
+         onclick="changerImage(this)"
+         data-alt="https://tse2.mm.bing.net/th/id/OIP.NCV4H2BrLa37VYKQdWuK0QHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
 
-    <!-- Produit 5 -->
-    <article class="produit">
-        <img src="produit_4.png" alt="Produit de nettoyage">
-        <h3>Accessoire de nettoyage</h3>
-        <p>
-            Cet objet permet de nettoyer votre frigo sans laisser aucune trace de poussière. Très efficace
-            et peu cher.
-        </p>
-        <a href="#" class="btn">Acheter</a>
-    </article>
+    <h3>Frigo premium</h3>
+    <p>Réfrigérateur haut de gamme idéal pour conserver vos aliments avec performance et élégance.</p>
+    <p class="price">899€</p>
+    <button onclick="acheter()">Acheter</button>
+  </div>
 
-    <!-- Produit 6 -->
-    <article class="produit">
-        <img src="produit_5.png" alt="Produit de nettoyage">
-        <h3>Accessoire de nettoyage</h3>
-        <p>
-            Cet objet permet de nettoyer votre frigo sans laisser aucune trace de poussière. Très efficace
-            et peu cher.
-        </p>
-        <a href="#" class="btn">Acheter</a>
-    </article>
+  <!-- PRODUIT 2 -->
+  <div class="card">
+    <img src="file:///C:/Users/compteadmin/Downloads/cao-jun-furniture-5058151_1920.jpg"
+         onclick="changerImage(this)"
+         data-alt="C:\Users\compteadmin\Downloads\jeanvdmeulen-dining-room-3108037_1920.jpg">
 
+    <h3>Table design</h3>
+    <p>Table en bois massif élégante pour un salon moderne et chaleureux.</p>
+    <p class="price">299€</p>
+    <button onclick="acheter()">Acheter</button>
+  </div>
+
+  <!-- PRODUIT 3 -->
+  <div class="card">
+    <img src="C:\Users\compteadmin\Downloads\congerdesign-roses-821705_1920.jpg"
+         onclick="changerImage(this)"
+         data-alt="C:\Users\compteadmin\Downloads\van3ssa-white-tulips-6074374_1920.jpg">
+
+    <h3>Vase décoratif</h3>
+    <p>Objet design parfait pour sublimer votre intérieur et ajouter une touche moderne.</p>
+    <p class="price">45€</p>
+    <button onclick="acheter()">Acheter</button>
+  </div>
+
+  <!-- PRODUIT 4 -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+         onclick="changerImage(this)"
+         data-alt="C:\Users\compteadmin\Downloads\umberto689-infinity-1568821_1920.jpg">
+
+    <h3>Voiture électrique</h3>
+    <p>Voiture moderne écologique avec autonomie longue durée et recharge rapide.</p>
+    <p class="price">29 999€</p>
+    <button onclick="acheter()">Acheter</button>
+  </div>
+
+</div>
+
+<!-- FLECHE CENTREE -->
+<div id="zone-fleche">
+  <div id="top" onclick="remonter()">⬆ Retour en haut</div>
+</div>
 
 </main>
 
+<div id="achat"> Vous avez acheté ce produit 😁</div>
 
-<div id="bandeau">Vous avez acheté ce produit de qualité.</div>
+<footer>© 2026 FRIGO&CO — Tous droits réservés</footer>
 
-<button id="topBtn">⬆</button>
-
-<script src="produit.js"></script>
 
 </body>
 </html>
